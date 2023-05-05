@@ -12,7 +12,7 @@ WHISPER_ENABLE_COREML = True
 class build_ext(_build_ext):
     def run(self):
         # Run CMake to build the libwhisper library
-        cmake_dir = os.path.realpath("./whisper.cpp"))
+        cmake_dir = os.path.realpath("./whisper.cpp")
         pkg_build_dir = os.path.realpath("build")
         os.makedirs(pkg_build_dir, exist_ok=True)
 
